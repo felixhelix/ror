@@ -83,20 +83,20 @@
 				$('#rorIdField').remove("");
 				$('input[id^="affiliation-').val("");
 				$('.localization_popover').css("display", "hidden");
-				$(tagitInput).attr("placeholder", rorPlaceHolder);
+				$('input[id^="affiliation-"]').parent().children().find("input").attr("placeholder", rorPlaceHolder);
 				{rdelim},
 			onTagClicked: function (event, ui) {ldelim}
-				$(tagitInput).attr("placeholder", rorPlaceHolder);
+				$('input[id^="affiliation-"]').parent().children().find("input").attr("placeholder", rorPlaceHolder);
 				{rdelim},
 			onTagRemoved: function (event, ui) {ldelim}
 				$('#rorIdField').remove("");
 				$('input[id^="affiliation-').val("");
 				$('.localization_popover').css("display", "hidden");
-				$(tagitInput).attr("placeholder", rorPlaceHolder);
+				$('input[id^="affiliation-"]').parent().children().find("input").attr("placeholder", rorPlaceHolder);
 				{rdelim}
 			{rdelim});
 		if($('.tagit-label').val() || $('.tagit-label').length==0 ) {
-			$(tagitInput).attr("placeholder", rorPlaceHolder);
+			$('input[id^="affiliation-"]').parent().children().find("input").attr("placeholder", rorPlaceHolder);
 		}
 		{rdelim});
 </script>
