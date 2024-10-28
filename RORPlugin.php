@@ -84,8 +84,9 @@ class RORPlugin extends GenericPlugin {
 	private function getCurrentAuthorAffiliation($formAuthorId, $locale) {
 		$authorDao = DAORegistry::getDAO('AuthorDAO');
 		$author = $authorDao->getById($formAuthorId);
-
-		return $author->getData('affiliation', $locale);
+		if ($author) {
+			return $author->getData('affiliation', $locale);
+		}	
 	}
 
 	function handleFormDisplay($hookName, $args) {
